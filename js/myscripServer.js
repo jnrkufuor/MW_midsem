@@ -21,7 +21,7 @@ jQuery(document).ready(function ($) {
         var password= $('#pword').val();
         $.ajax({
             type: 'POST',
-            url: 'http://52.89.116.249/~ernest_kufuor/projectAjax.php?cmd=1&password='+password+'&username='+username,
+            url: 'http://52.89.116.249/~ernest_kufuor/ajax/projectAjax.php?cmd=1&password='+password+'&username='+username,
             error: function () {
                 // alert('error, failed to get id');
             },
@@ -93,7 +93,7 @@ jQuery(document).ready(function ($) {
         var phone=$('#phone').val();
         $.ajax({
             type: 'POST',
-            url: 'http://52.89.116.249/~ernest_kufuor/projectAjax.php?cmd=2&password='+password+'&username='+username+'&lname='+lname+'&fname='+fname+'&phone='+phone,
+            url: 'http://52.89.116.249/~ernest_kufuor/ajax/projectAjax.php?cmd=2&password='+password+'&username='+username+'&lname='+lname+'&fname='+fname+'&phone='+phone,
             error: function () {
 
             },
@@ -129,7 +129,7 @@ jQuery(document).ready(function ($) {
         var cpool=sessionStorage.id;
         $.ajax({
             type: 'POST',
-            url: 'http://52.89.116.249/~ernest_kufuor/projectAjax.php?cmd=3&type='+type+'&dest='+dest+'&capacity='+capacity+'&time='+time+'&username='+cpool,
+            url: 'http://52.89.116.249/~ernest_kufuor/ajax/projectAjax.php?cmd=3&type='+type+'&dest='+dest+'&capacity='+capacity+'&time='+time+'&username='+cpool,
             error: function () {
                 // alert('error, failed to get id');
             },
@@ -160,7 +160,7 @@ jQuery(document).ready(function ($) {
         event.preventDefault();
         $.ajax({
             type: 'POST',
-            url: 'http://52.89.116.249/~ernest_kufuor/projectAjax.php?cmd=4',
+            url: 'http://52.89.116.249/~ernest_kufuor/ajax/projectAjax.php?cmd=4',
             error: function () {
                 // alert('error, failed to get id');
             },
@@ -216,7 +216,7 @@ function dialog(i,payment)
 {
     $.ajax({
         type: 'POST',
-        url: 'http://52.89.116.249/~ernest_kufuor/projectAjax.php?cmd=5&oid='+array[i].driver+'&cid='+array[i].carID+'&pay='+payment+'&pid='+sessionStorage.id+'&count='+array[i].full
+        url: 'http://52.89.116.249/~ernest_kufuor/ajax/projectAjax.php?cmd=5&oid='+array[i].driver+'&cid='+array[i].carID+'&pay='+payment+'&pid='+sessionStorage.id+'&count='+array[i].full
         +'&cap='+array[i].cap+"&phone="+sessionStorage.phone,
         error: function () {
             // alert('error, failed to get id');
@@ -245,7 +245,7 @@ jQuery(document).ready(function ($) {
         event.preventDefault();
         $.ajax({
             type: 'POST',
-            url: 'http://52.89.116.249/~ernest_kufuor/projectAjax.php?cmd=6&id='+sessionStorage.id,
+            url: 'http://52.89.116.249/~ernest_kufuor/ajax/projectAjax.php?cmd=6&id='+sessionStorage.id,
             error: function () {
                 // alert('error, failed to get id');
             },
@@ -314,7 +314,7 @@ function onSuccess(position) {
     long= position.coords.longitude ;
     $.ajax({
         type: 'POST',
-        url: 'http://52.89.116.249/~ernest_kufuor/projectAjax.php?cmd=7&id='+sessionStorage.id+"&lat="+lat+"&long="+long,
+        url: 'http://52.89.116.249/~ernest_kufuor/ajax/projectAjax.php?cmd=7&id='+sessionStorage.id+"&lat="+lat+"&long="+long,
         error: function () {
             // alert('error, failed to get id');
         },
@@ -339,7 +339,7 @@ jQuery(document).ready(function ($) {
     $('.add').click(function (event) {
         $.ajax({
             type: 'POST',
-            url: 'http://52.89.116.249/~ernest_kufuor/projectAjax.php?cmd=8&id='+sessionStorage.id+'&message='+$(".info").val()+'&pic='+sessionStorage.image,
+            url: 'http://52.89.116.249/~ernest_kufuor/ajax/projectAjax.php?cmd=8&id='+sessionStorage.id+'&message='+$(".info").val()+'&pic='+sessionStorage.image,
             error: function () {
                 // alert('error, failed to get id');
             },

@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Kasanoma Cars</title>
+		<link rel="stylesheet"  href="css/jquery.mobile.structure.css" />
+		<link rel="stylesheet" href="css/jquery.mobile.theme.css" />
+		<link rel="stylesheet" href="css/font.css" />
+		<link rel="stylesheet" href="css/materialize.min.css">
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+		<link rel="stylesheet" href="font_awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Tangerine|Satisfy|Pacifico|Rancho|Oregano">
+	</head>
+	<body>
+		<div data-role="page" id="splashPage" >
+			<div data-role="header" style="text-shadow: none">
+			</div>
+			<div data-role="content" style="text-shadow: none" class="splash container">
+				<br><br><br><br><br><br><br>
+				<p style="text-align:center;" class="splash-font"> Kasanoma Cars</p>
+				<p style="text-align:center; font-size:45px; "><i class="fa fa-taxi i" aria-hidden="true"></i></p>
+				<br><br><br><br>
+				<div class="message">
+
+				</div>
+				<br>
+				<div class="input-holder">
+					<input class="splash-input" id ="username" name="username" placeholder="Username" required/>
+					<input class="splash-input" id="pword" type="password" name="password" placeholder="Password" required/>
+				</div>
+				<br><br>
+				<p style="text-align:center;">
+					<a href="" data-transition="fade" class="button-link login">Login</a>
+				</p>
+				<br>
+				<p style="text-align:center;">
+					<a href="#signup" data-transition='fade' class="button2-link ">Sign Up</a>
+				</p>
+			</div>
+		</div>
+		<div data-role="page" id="dashboard" >
+
+			<div data-role="header" style="text-shadow: none">
+				<nav class="my-nav">
+					<div class="nav-wrapper">
+						<p class="logo brand-logo "style="color:ghostwhite;" href="index.html"></p>
+						<div class="container">
+							<a class="home " href="#cPool"><i class="fa fa-plus-circle" aria-hidden="true"></i></a>
+							<a class="logout p-font log-btn" href="#splashPage">Logout</a>
+						</div>
+					</div>
+				</nav>
+			</div>
+			<div data-role="content" style="text-shadow: none" class="splash container">
+				<div class="input-holder">
+					<div class="dash jumbotron ">
+						<a class="p-font jPool" href="#jPool"> Join Pool</a>
+					</div>
+					<div class="dash jumbotron">
+						<a class="p-font" href="#sendBulk"> Send Bulk SMS</a>
+					</div>
+					<div class="dash jumbotron">
+						<a class="p-font" href="#location">See My Location</a>
+					</div>
+					<div class="dash jumbotron">
+						<a class="p-font pJoin" href="#report">View My Pool</a>
+					</div>	
+					<div class="dash jumbotron">
+						<a class="p-font" href="#notify"> Notify</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div data-role="page" id="cPool" >
+			<div data-role="header" style="text-shadow: none">
+				<div data-role="header" style="text-shadow: none">
+					<nav class="my-nav">
+						<div class="nav-wrapper">
+							<p class="logo brand-logo" style="color:ghostwhite;"  href="index.html"></p>
+							<div class="container">
+								<a class="home p-font back-cpool" href="#dashboard">Back</a>
+							</div>
+						</div>
+					</nav>
+				</div>
+
+			</div>
+			<div data-role="content" style="text-shadow: none" class="splash container">
+				<p class="h-font">Create A Pool</p>
+				<br><br>
+				<div class="input-holder">
+					<input class="splash-input" name="" id="car" type="text" placeholder="CarType" required>
+					<input class="splash-input" name="" id="dest" type="text" placeholder="Destination" required>
+					<input class="splash-input" name="" id="capacity" type="number" placeholder="Number of Passengers" required>
+					<br>
+					<Label class="t-font">Departure Time</Label>
+					<input class="splash-input" name="" id="time" type="time" placeholder="Departure Time" required>
+					<br><br><br>
+					<div class="message_cpool">
+
+					</div>
+					<br><br>
+					<a href="" data-transition='fade' class="button-link cpool">Done</a>
+				</div>
+
+			</div>
+		</div>
+
+		<div data-role="page" id="signup" >
+			<div data-role="header" style="text-shadow: none">
+				<div data-role="header" style="text-shadow: none">
+					<nav class="my-nav">
+						<div class="nav-wrapper">
+
+							<div class="container">
+								<a class="home p-font back-sign" href="#splashPage">Back</a>
+
+							</div>
+						</div>
+					</nav>
+				</div>
+
+			</div>
+			<div data-role="content" style="text-shadow: none" class="splash container">
+				<p class="h-font">Sign Up</p>
+				<br><br>
+				<div class="input-holder">
+					<input class="splash-input" name="" id="s_username" type="text" placeholder="Username"required>
+					<input class="splash-input" name="" id="firstname" type="text" placeholder="First Name"required>
+					<input class="splash-input" name="" id="lastname" type="text" placeholder="Last Name"required>
+					<input class="splash-input" name="" id="phone" type="tel" placeholder="Phone Number"required>
+					<input class="splash-input" name="" id="s_pword" type="password" placeholder="Password"required>
+					<br><br><br>
+					<div class="message_signUp">
+
+					</div>
+					<br><br>
+					<a href="" data-transition='fade' class="button-link signup">Sign Up</a>
+				</div>
+
+			</div>
+		</div>
+
+
+		<div data-role="page" id="jPool" >
+			<div data-role="header" style="text-shadow: none">
+				<nav class="my-nav">
+					<div class="nav-wrapper">
+						<p class="logo brand-logo "style="color:ghostwhite;" href="index.html"></p>
+						<div class="container">
+							<a class="home p-font j_back" href="#dashboard">Back</a>
+						</div>
+					</div>
+				</nav>
+
+			</div>
+
+			<div data-role="header" style="text-shadow: none">
+
+			</div>
+			<div data-role="content" style="text-shadow: none" class="splash container">
+				<p class="h-font">Join A Pool</p>
+				<br>
+				<div class="list-group">
+
+				</div>
+				<br><br><br>
+				<div class="message_cpool">
+
+				</div>
+			</div>
+		</div>
+
+		<div data-role="page" id="sendBulk" >
+			<div data-role="header" style="text-shadow: none">
+				<nav class="my-nav">
+					<div class="nav-wrapper">
+						<p class="logo brand-logo "style="color:ghostwhite;" href="index.html"></p>
+						<div class="container">
+							<a class="home p-font" href="#dashboard">Back</a>
+
+						</div>
+					</div>
+				</nav>
+			</div>
+
+			<div data-role="header" style="text-shadow: none">
+
+			</div>
+			<div data-role="content" style="text-shadow: none" class="splash container">
+				<p class="h-font">Bulk SMS</p>
+				<br><br>
+				<div class="input-holder">
+					<form action=" " type="GET">
+						<input class="splash-input" name="" id="numbers" type="text" placeholder="Numbers">
+						<textarea  class="splash-input form-control"  rows="6" id= "message" name="message" placeholder="Your Message Here"></textarea> 
+						<br><br><br>
+						<a href="" data-transition='fade' class="button2-link contacts">Select Contacts</a>
+						<br><br><br>
+						<a href="" data-transition='fade' class="button-link">Send Message</a>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<div data-role="page" id="location" >
+			<div data-role="header" style="text-shadow: none">
+				<nav class="my-nav">
+					<div class="nav-wrapper">
+						<p class="logo brand-logo "style="color:ghostwhite;" href="index.html"><i class="fa fa-user-o" aria-hidden="true"></i> Ernest</p>
+						<div class="container">
+							<a class="home p-font" href="#dashboard">Back</a>
+
+						</div>
+					</div>
+				</nav>
+
+			</div>
+
+			<div data-role="header" style="text-shadow: none">
+
+			</div>
+			<div data-role="content" style="text-shadow: none" class="splash">
+				<p class="h-font">View My Location</p>
+				<br><br>
+					<div id="map" style="width:100%;height:300px;"> </div>
+					<br><br><br><br>
+				
+			</div>
+		</div>
+
+		<div data-role="page" id="report" >
+			<div data-role="header" style="text-shadow: none">
+				<nav class="my-nav">
+					<div class="nav-wrapper">
+						<p class="logo brand-logo "style="color:ghostwhite;" href="index.html"> </p>
+						<div class="container">
+							<a class="home p-font" href="#dashboard">Back</a>
+
+						</div>
+					</div>
+				</nav>
+
+			</div>
+
+			<div data-role="header" style="text-shadow: none">
+
+			</div>
+			<div data-role="content" style="text-shadow: none" class="splash ">
+				<p class="h-font">View Your Pool</p>
+				<br><br><br>
+				<div class="message-join" style="=background-color:rgb(41, 70, 71)!important;">
+				</div>
+				<div class="table-responsive">
+
+				</div>
+			</div>
+		</div>
+
+		<div data-role="page" id="notify" >
+			<div data-role="header" style="text-shadow: none">
+				<nav class="my-nav">
+					<div class="nav-wrapper">
+						<p class="logo brand-logo "style="color:ghostwhite;" href="index.html"></p>
+						<div class="container">
+							<a class="home p-font" href="#dashboard">Back</a>
+							<a class="logout h-font add" href="#add"><i class="fa fa-plus-circle" aria-hidden="true"></i></a>
+
+						</div>
+					</div>
+				</nav>
+
+			</div>
+
+			<div data-role="header" style="text-shadow: none">
+
+			</div>
+			<div data-role="content" style="text-shadow: none" class="splash container">
+				<p class="h-font">Notify</p>
+			</div>
+		</div>
+
+		<div data-role="page" id="add" >
+			<div data-role="header" style="text-shadow: none">
+				<nav class="my-nav">
+					<div class="nav-wrapper">
+						<p class="logo brand-logo "style="color:ghostwhite;" href="index.html"></p>
+						<div class="container">
+							<a class="home p-font" href="#notify">Back</a>
+
+						</div>
+					</div>
+				</nav>
+			</div>
+
+			<div data-role="header" style="text-shadow: none">
+
+			</div>
+			<div data-role="content" style="text-shadow: none" class="splash container">
+				<p class="h-font">What's New?</p>
+				<br><br>
+				<div class="input-holder">
+					<form action=" " type="GET">
+						<textarea  class="splash-input form-control"  rows="6" id= "info" name="info" placeholder="What's up?"></textarea>
+						<br>
+						<a href="" data-transition='fade' class="button2-link add-pic">Add Picture</a>
+						<br><br><br><br><br>
+						<a href="" data-transition='fade' class="button-link ">Add Post</a>
+					</form>
+				</div>
+			</div>
+		</div>
+		<script>
+			var userAgent = navigator.userAgent + '';
+			if (userAgent.indexOf('iPhone') > -1) {
+				document.write('<script src="js/lib/cordova-iphone.js"></sc' + 'ript>');
+				var mobile_system = 'iphone';
+			} else if (userAgent.indexOf('Android') > -1) {
+				document.write('<script src="js/lib/cordova-android.js"></sc' + 'ript>');
+				var mobile_system = 'android';
+			} else {
+				var mobile_system = '';
+			}
+		</script>
+		<script src="js/materialize.min.js"></script>
+		<script src="https://use.fontawesome.com/e71a2dc69d.js"></script>
+		<script src="js/lib/jquery.js"></script>
+		<script src="js/app/app.js"></script>
+		<script src="js/app/bootstrap.js"></script>
+		<script src="js/lib/jquery.mobile.js"></script>
+		<script src="js/myscript.js"></script>
+		<script type="text/javascript" src="js/cordova-android.js"></script>
+		<script async defer
+				src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDqzFNqMOFKzyeJguXJFIotMQxUKJhk9As">
+		</script>
+	</body>
+
+</html>

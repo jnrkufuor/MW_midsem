@@ -1,0 +1,319 @@
+@font-face {
+ font-family: 'estrewebfont';
+ src: url('./estrewebfont.eot');
+ src: local('estrewebfont'), url('./estrewebfont.woff') format('woff'), url('./estrewebfont.ttf') format('truetype');
+}
+@font-face {
+ font-family: 'NexaFreeLightwebfont';
+ src: url('./NexaFreeLightwebfont.eot');
+ src: local('NexaFreeLightwebfont'), url('./NexaFreeLightwebfont.woff') format('woff'), url('./NexaFreeLightwebfont.ttf') format('truetype');
+}
+@font-face {
+ font-family: 'apexnewlightwebfont';
+ src: url('./apexnewlightwebfont.eot');
+ src: local('apexnewlightwebfont'), url('./apexnewlightwebfont.woff') format('woff'), url('./apexnewlightwebfont.ttf') format('truetype');
+}
+@font-face{
+ font-family:banana;
+ src: url(banana.ttf);
+}
+@font-face{
+ font-family:bulldozer;
+ src: url(bulldozer.ttf);
+}
+@font-face{
+ font-family:bespoke;
+ src: url(bespoke.otf);
+}
+@font-face{
+ font-family:jeboy;
+ src: url(JeboyFree.ttf);
+}
+
+@font-face{
+ font-family:ubuntu;
+ src: url(Ubuntu-M.ttf);
+}
+@font-face{
+ font-family:bespoke;
+ src: url(bespoke.ttf);
+}
+@font-face{
+ font-family:dosis;
+ src: url(Dosis-Regular.otf);
+}
+@font-face{
+ font-family:exo;
+ src: url(Exo2-Medium.otf);
+}
+@font-face{
+ font-family:remachine;
+ src: url(remachine.ttf);
+}
+@font-face{
+ font-family:TexasToast;
+ src: url(TexasToast.ttf);
+}
+@font-face{
+ font-family:btb;
+ src: url(btb.ttf);
+}
+
+/* use this class to attach this font to any element i.e. <p class="fontsforweb_fontid_1517">Text with this font applied</p> */
+.logo {
+ font-family: 'exo' !important;
+ font-size: 20px !important;
+ color: oldlace!important;
+ /* top:-20px!important;*/
+} 
+.jumbotron{
+ background-color:dimgrey!important;
+}
+
+.page{
+ font-family: 'TexasToast';
+ font-size: 30px!important;
+ font-weight: bolder;
+ color: rgb(45, 117, 120)!important;
+}
+.my-nav{
+ background-color: rgb(45, 117, 120);
+ text-align: center;
+}
+.my-nav2{
+ background-color: rgb(56, 102, 103)!important;
+ text-align: center;
+ height: 50px;
+ border: none;
+ border-bottom: none;
+}
+.home
+{
+
+ float:left;
+ font-family: 'exo' !important;
+ font-weight:700;
+ font-stretch: extra-condensed;
+ color: oldlace!important;
+ font-size: 25px!important;
+}
+
+.logout
+{
+ float:right;
+}
+.dash{
+ background-color: rgb(41, 70, 71)!important;
+ color: oldlace!important;
+ text-align: center;
+ width:100%;
+ font-family: 'exo' !important;
+ font-weight: 200!important;
+ height:70px;
+ font-size: 17px!important;
+ margin: auto!important;
+ margin-bottom: 10px!important;
+ border-radius: 0!important;
+ float:none;
+ padding: 15px!important;
+}
+
+.my-nav2{
+ background-color: oldlace;
+}
+.maindiv{
+ background-color: oldlace;
+}
+.well 
+{
+ background-color: dimgray !important;
+ color:oldlace !important;
+ font-family: 'dosis' !important;
+ text-align: justify;
+ font-size:16px !important;
+ color: oldlace !important;
+
+}
+.img-thumbnail
+{
+ height:150px!important;
+ width: 304px!important;
+ vertical-align: middle;
+}
+#splashPage{
+ background:rgb(45, 117, 120);
+ background: -webkit-linear-gradient(left top, rgb(45, 117, 120),rgb(56, 102, 103)); 
+ background: -o-linear-gradient(bottom right, rgb(45, 117, 120),rgb(56, 102, 103)); 
+ background: -moz-linear-gradient(bottom right, rgb(45, 117, 120),rgb(56, 102, 103)); 
+ background: linear-gradient(to bottom right,rgb(45, 117, 120),rgb(56, 102, 103)); 
+ position:fixed;
+ width:100%;
+ height:100%;
+ top:0px;
+ left:0px;
+ z-index:1000;
+}
+
+
+#dashboard,#add, #cPool, #jPool, #notify, #sendBulk, #report,#signup, #location{
+ background:rgb(56, 102, 103);
+ position:fixed;
+ width:100%;
+ height:100%;
+ top:0px;
+ left:0px;
+ z-index:1000;
+ overflow:scroll!important;
+}
+a{
+ text-decoration: none!important;
+}
+.back
+{
+ font-size: 18px!important;
+ font-weight: 100!important;
+}
+.p-font{
+ font-family: 'exo' !important;
+ font-size: 16px !important;
+ font-weight:700;
+ font-stretch: extra-condensed;
+ color: oldlace!important;
+}
+.h-font
+{
+ font-family: 'exo' !important;
+ font-size: 23px !important;
+ color: oldlace!important;
+ text-align: center;
+}
+.splash-font
+{
+ font-family: 'Oregano' !important;
+ font-size: 40px !important;
+ color: oldlace!important;
+}
+.i
+{
+ color:yellowgreen;
+}
+
+.button-link {
+ padding: 10px 10px;
+ background: oldlace;
+ color:rgb(45, 117, 120)!important;
+ border-radius:10px;
+ font-size: 13px;
+ font-weight:700;
+ font-family: 'exo' !important;
+}
+
+.button2-link {
+ font-family: 'exo' !important;
+ border-radius:5px;
+ padding: 10px 10px;
+ color:oldlace!important;
+ font-size: 13px;
+ font-weight:700;
+}
+.input-holder
+{
+ text-align: -webkit-center!important;
+}
+body{
+ font-size: 10px!important;
+}
+
+.message,.message_signUp, .message_cpool, .message-pools, .message-join
+{
+ font-family: 'exo' !important;
+ font-size: 12px !important;
+ font-weight:400;
+ font-stretch:normal;
+ color: floralwhite;
+ text-align: center;
+}
+
+
+.list-group-item-text{
+ color:oldlace !important;
+}
+
+
+.list-group-item{
+ background-color: rgb(41, 70, 71)!important;
+ border-radius: 0px !important;
+ font-family: 'exo' !important;
+ font-size: 12px!important;
+ border-color:rgb(41, 70, 71) !important;
+}
+
+.j-font{
+ font-family: 'exo' !important;
+ font-size: 12px !important;
+ font-weight:500;
+ font-stretch:500;
+ text-align: center!important;
+ color: oldlace!important;
+ background-color: rgb(41, 70, 71)!important;
+}
+
+#map
+{
+ resize:both!important;
+ overflow:auto!important;
+}
+
+.badge
+{
+ color:white!important;
+ background-color:rgb(45, 117, 120)!important;
+ font-family: 'exo' !important;
+ font-weight:bolder!important;
+}
+
+.list-group-item-heading
+{
+ color:#78CB8F!important;
+ font-family: 'exo' !important;
+ font-size: 17px!important;
+}
+.t-font
+{
+ font-family: 'exo' !important;
+ font-size: 12px !important;
+ font-weight:400;
+ font-stretch: extra-condensed;
+ color: oldlace!important;
+}
+.splash-input
+{
+ border-radius:5px!important;
+ background-color: whitesmoke!important;
+ opacity: 1;
+ width: 80%!important;
+ font-size: 12px!important;
+ color: rgb(45, 117, 120)!important;
+ font-weight: 300;
+ font-family:'exo'!important;
+ margin-bottom: 1px!important;
+ padding-bottom: 2px !important;
+ padding-left: 1px !important;
+
+}
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+ color:    rgb(45, 117, 120)!important;
+ opacity: 0.7;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+ color:    rgb(45, 117, 120)!important;
+ opacity:  0.7;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+ color:    rgb(45, 117, 120)!important;
+ opacity:  0.7;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+ color:  rgb(45, 117, 120)!important;
+ opacity: 0.7;
+}
